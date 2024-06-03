@@ -22,10 +22,10 @@ import * as process from 'process'
 			imports: [ConfigModule],
 			useFactory: (configService: ConfigService) => ({
 				type: 'postgres',
-				host: 'localhost',
+				host: 'postgresql_db',
 				port: 5432,
 				username: 'postgres',
-				password: 'asdfjkl',
+				password: 'postgres',
 				database: 'nestjs_docker',
 				synchronize: true,
 				entities: [__dirname + '/**/*.entity{.js, .ts}'],
