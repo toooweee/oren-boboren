@@ -4,7 +4,7 @@ import { Request } from 'express';
 @Injectable()
 export class AuthService {
 	private readonly validEmail = 'admin@example.com';
-	private readonly validPassword = 'password123';
+	private readonly validPassword = 'F90-ae-Ffs-GuaArd';
 
 	validateUser(req: Request, email: string, password: string): boolean {
 		if (email === this.validEmail && password === this.validPassword) {
